@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+class convert
+{
+    protected:
+        double val1,val2;
+    public:
+        double init()
+        {
+            return val1;
+        }
+        double final()
+        {
+            return val2;
+        }
+        virtual void compute()=0;
+        convert(double ini)
+        {
+            val1=ini;
+            val2=0;
+        }
+};
+class distancecon:public convert
+{
+    
+}
